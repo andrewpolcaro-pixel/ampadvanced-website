@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+:root {
+  --navy: #042C53;
+  --terra: #D85A30;
+  --cream: #FBEEDB;
+  --blush: #FAECE7;
+}
+
+@theme inline {
+  --color-navy: var(--navy);
+  --color-terra: var(--terra);
+  --color-cream: var(--cream);
+  --color-blush: var(--blush);
+  --font-sans: var(--font-barlow);
+}
+
+body {
+  background: var(--blush);
+  color: var(--navy);
+  font-family: var(--font-barlow), ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
