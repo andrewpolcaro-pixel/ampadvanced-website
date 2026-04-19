@@ -1,5 +1,6 @@
 import Image from "next/image";
 import NavBar from "./components/NavBar";
+import SlotMachine from "./components/SlotMachine";
 
 const services = [
   {
@@ -59,15 +60,21 @@ export default function Home() {
         className="bg-[#FAECE7] py-28 px-6"
       >
         <div className="max-w-5xl mx-auto">
-          <p className="text-[10px] font-semibold tracking-[0.22em] uppercase text-[#042C53] opacity-35 mb-8">
+          <p className="text-[10px] font-semibold tracking-[0.22em] uppercase text-[#042C53] opacity-35 mb-10">
             Advanced Management Performance
           </p>
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-semibold text-[#042C53] leading-[1.15] max-w-3xl mb-6">
+
+          {/* Slot machine — A M P cycling display */}
+          <div className="mb-10">
+            <SlotMachine />
+          </div>
+
+          <h1 className="text-xl md:text-2xl font-light text-[#042C53] opacity-70 max-w-xl leading-[1.45] mb-4">
             Elevating{" "}
-            <em className="text-[#D85A30] not-italic">management</em>{" "}
+            <em className="text-[#D85A30] not-italic font-normal">management</em>{" "}
             performance at every level.
           </h1>
-          <p className="text-base font-light text-[#042C53] opacity-55 max-w-md leading-[1.75] mb-10">
+          <p className="text-sm font-light text-[#042C53] opacity-50 max-w-md leading-[1.75] mb-10">
             Strategic consulting that drives measurable results for leadership
             teams and organizations.
           </p>

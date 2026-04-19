@@ -10,7 +10,7 @@ export default function NavBar() {
 
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-[rgba(4,44,83,0.07)]">
-      <div className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div className="max-w-5xl mx-auto px-6 h-20 flex items-center justify-between">
         {/* Logo */}
         <a href="#home" className="flex-shrink-0">
           <Image
@@ -18,7 +18,7 @@ export default function NavBar() {
             alt="Advanced Management Performance"
             width={1600}
             height={896}
-            className="h-8 w-auto"
+            className="h-12 w-auto"
             priority
           />
         </a>
